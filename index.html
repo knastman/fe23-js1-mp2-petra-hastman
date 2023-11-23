@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3a14b5ad60.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js" defer></script>
+  <link href="./css/style.css" rel="stylesheet" />
+  <title>Projekt 2 - Rock Paper Scissors</title>
+</head>
+<body>
+  <main>
+    <h1> - Rock Paper Scissors - </h1>
+    <!-- Get player name -->
+    <section id="getname">
+      <h2>Write your name</h2>
+      <form>
+        <input type="text" placeholder="Your name here" id="nameinput" name="name">
+        <button id="submitname">Submit</button>
+      </form>
+    </section>
+    <!-- Game -->
+    <section id="game">
+      <h2 id="winner">Let's play! Take your pick</h2>
+      <h2 id="rounds">Round 1</h2>
+      <div class="startoverbuttondiv"><button id="startoverbutton">New game</button></div>
+      <div class="players">
+        <section>
+          <h3 id="playername">Playername</h3>
+          <div class="score">
+            <div><h4>Score: </h4></div>
+            <div>
+              <ul id="pscore">
+                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="items" id="items">
+            <div id="rock"><img src="img/rock.png" alt="Rock" pick="Rock" /></div>
+            <div id="paper"><img src="img/paper.png" alt="Paper" pick="Paper"></div>
+            <div id="scissors"><img src="img/scissors.png" alt="Scissors" pick="Scissors" /></div>
+          </div>
+          <p id="playerpick"></p>
+          <p id="ppoints">Your points: 0 p</p>
+        </section>
+        <section>
+          <h3>Computer</h3>
+          <div class="score">
+          <div><h4>Score: </h4></div>          
+            <div>
+              <ul id="cscore">
+                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="items">
+            <div id="crock"><img src="img/rock.png" alt="Rock" /></div>
+            <div id="cpaper"><img src="img/paper.png" alt="Paper" /></div>
+            <div id="cscissors"><img src="img/scissors.png" alt="Scissors" /></div>
+          </div>
+          <p id="computerpick"></p>
+          <p id="cpoints">Computer's points: 0 p</p>          
+        </section>
+      </div>
+      <div class="roundsbuttondiv"><button id="roundsbutton">Click for next Round</button></div>
+    </section>
+  </main>
+</body>
+</html>

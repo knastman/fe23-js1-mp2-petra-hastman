@@ -1,0 +1,142 @@
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+html {
+  font-size: 14px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img{
+  max-width:100%;
+}
+h1, h2, h3, h4{
+  text-align: center;
+}
+
+h1{
+  font-size: 1.85em;
+}
+
+h3{
+  margin:10px 0 5px 0;
+  font-size:1.4em;
+}
+
+h4{
+  margin-top:0;
+}
+
+#getname{
+  width:230px;
+  margin:10px auto;
+}
+
+#game{
+  display:none;
+}
+
+#winner, #rounds{
+  text-align: center;
+  font-size: 1.7rem;
+  margin:0px 0 15px 0;
+}
+
+.players{
+  display:flex;
+  justify-content: space-around;
+  justify-content: center;
+  gap:20px;
+}
+
+.players > section{
+  width: 48%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  
+}
+
+.score{
+  display:flex;
+  justify-content: center;
+  align-items: baseline;
+  gap:8px;
+  font-size: 1.4rem;
+  color:#b00707;
+}
+
+ul {
+  display:flex;
+  margin: 0 auto 1.3em auto;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+  gap: 8px;
+}
+
+#playerpick, #computerpick{
+  font-style: italic;
+  margin-bottom:0.1em;
+  color:rgb(121, 120, 120);
+  height: 25px;
+}
+#ppoints, #cpoints{
+  margin:0.15em 0 0.7em 0;
+}
+
+.items{
+  display:flex;
+  justify-content: center;
+  gap:20px;
+}
+
+.items img:hover {
+  opacity: 0.50;
+}
+
+.items div{
+  max-width:30%;
+}
+
+.roundsbuttondiv{
+  margin:10px auto;
+  width:145px;
+}
+#roundsbutton{
+  padding:10px;
+  text-align:center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.startoverbuttondiv{
+  margin:10px auto;
+  width:88px;
+}
+
+#startoverbutton{
+  padding:10px;
+  text-align:center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+/********************* MEDIA QUERIES ********************/
+
+@media only screen and (max-width: 700px)
+ {
+  .players{
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+  }
+  .players > section{
+    width: 95%;
+  }
+  h1{
+    font-size: 1.8em;
+    margin:5px 0 2px 0;
+  }
+}
