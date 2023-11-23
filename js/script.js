@@ -133,10 +133,10 @@ divItems.addEventListener('click', (event)=>{
 
     /********* WINNER  ********/
     if (pPoints == maxPoints){
-      winner.innerText = `${playerNname} wins whole game!`;
+      winner.innerText = `${playerNname} wins the whole game!`;
     }
     else if (cPoints == maxPoints){
-      winner.innerText = 'Computer wins whole game!';
+      winner.innerText = 'Computer wins the whole game!';
     }  
 
     if (cPoints == maxPoints || pPoints == maxPoints){
