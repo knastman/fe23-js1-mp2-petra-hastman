@@ -68,7 +68,7 @@ divItems.addEventListener('click', (event)=>{
   /********* PLAYER'S PICK ********/
   if(event.target.tagName === 'IMG'){
     const playerPick = event.target.getAttribute('pick');
-    playerPickP.innerText = 'Your pick is: ' + playerPick;
+    playerPickP.innerText = `Your pick: ${playerPick}`;
 
     if( playerPick != 'Rock'){
       rockDiv.style.display = 'none';
@@ -83,7 +83,7 @@ divItems.addEventListener('click', (event)=>{
     /********* COMPUTER'S PICK ********/
     const randomPick = Math.floor(Math.random() * itemsArray.length );
     const computersPick = itemsArray[randomPick];
-    computerPickP.innerText = 'Computer picked: ' + computersPick;
+    computerPickP.innerText = `Computer picked: ${computersPick}`;
     
     if( computersPick != 'Rock'){
       cRockDiv.style.display = 'none';
