@@ -1,7 +1,7 @@
 # fe23-js1-mp2-petra-hastman
 
 Projekt på programmet:
-Front end webbutvecklare 200 YH-poäng - Grit Academy  
+Front end webbutvecklare 400 YH-poäng - Grit Academy  
 (2023-2025)
 
 ### KURS
